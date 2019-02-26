@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  background-color: darkgrey;
+  color: white;
+  font-family: Avenir;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+ul {
+  border: 2px solid;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+li span {
+  text-align: center;
+  width: 400px;
+}
+
+li span:nth-child(2) {
+  opacity: 0;
+}
+
+li:hover span:nth-child(2) {
+  opacity: 1;
+}
+
+.done {
+  text-decoration: line-through;
+}
